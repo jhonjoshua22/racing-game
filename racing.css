@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: 'racefont';
+    src: url('C:/Users/acer/Desktop/racing/Sakana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	background-color: rgba(5, 0, 13, 0.95);
+	font-family: 'racefont';
+	color: white;
+}
+button{
+	background:inherit;
+	margin-top: 2vw;
+	border: 0vw solid white;
+}
+.game p {
+	color: white;
+	font-size: 2.5vw;
+}
+.scores .p1 {
+	color: white;
+	font-size: 2.5vw;
+	color: red;
+	margin: 0vw;
+}
+.scores .p2 {
+	color: white;
+	font-size: 2.5vw;
+	color: blue;
+	margin: -3vw;
+
+}
+.game {
+	width: 35vw;
+	height: 45vw;
+	float: left;
+	right: 0;
+	color: hotpink;
+	text-align: center;
+	line-height: 6vw;
+	font-size: 7vw;
+	padding-top: 5vw;
+	position: fixed;
+}
+.game img {
+	height: 5vw;width: 5vw;
+}
+#arrow1 {
+	font-size: 4vw;
+	letter-spacing: -0.6vw;
+	margin-right: 2vw;
+	animation: bounce 1s linear infinite
+	border: 1px solid white;
+	visibility: visible;
+}
+#arrow2 {
+	font-size: 4vw;
+	letter-spacing: -0.6vw;
+	margin-right: 2vw;
+	animation: bounce 1s linear infinite
+	border: 1px solid white;
+	visibility: hidden;
+}
+.scores span {
+	font-size: 3vw;
+
+}
+.outliner {
+	float: left;
+	margin: 2vw 0vw 0vw 4vw;
+	width: 60vw;
+}
+.grid-container {
+  	display: grid;
+  	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.grid-item img {
+	width: 140%;
+	margin: -1vw;
+	height: 5.2vw;
+}
+
+@keyframes bounce {
+	0% {transform: scale3d(1.2, 1.2, 1.2);}
+	50% {transform: scale3d(1, 1, 1);}
+	100% {transform: scale3d(1.2, 1.2, 1.2);}
+
+}
+.grid-item {
+	float:left;
+	background-color: rgb(200, 200, 200);
+  	border: 0.1vw solid black;
+  	font-size: 2vw;
+	height: 6vw;
+	padding: 2vw 1vw;
+  	text-align: center;
+	color: black;
+}
+.footer {
+	float: left;
+	width: 100vw;
+	position:fixed;
+	bottom:0;
+	left: 0;
+	text-align: center;
+}
