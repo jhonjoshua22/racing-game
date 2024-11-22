@@ -20,9 +20,10 @@ function dicenum(min, max) {
 			document.getElementById('pl1').innerHTML = player1;
 			document.getElementById(lastblock1).style.backgroundColor = "rgb(200, 200, 200)";
 			document.getElementById(lastblock1).style.animation = 'none';
-			document.getElementById(lastblock1).style.border = '0.1vw solid black';	
+			document.getElementById(lastblock1).style.border = '0.1vw solid black';
+			const button = document.getElementById('mybutton');
+			button.disabled = true;
 			return "PLAYER 1 WINS!";
-
 		} else {
 		document.getElementById(player1).style.backgroundColor = "red";
 		document.getElementById(player1).style.animation = 'bounce 1s linear infinite';
@@ -42,8 +43,9 @@ function dicenum(min, max) {
 			document.getElementById(lastblock2).style.backgroundColor = "rgb(200, 200, 200)";
 			document.getElementById(lastblock2).style.animation = 'none';
 			document.getElementById(lastblock2).style.border = '0.1vw solid black';	
+			const button = document.getElementById('mybutton');
+			button.disabled = true;
 			return "PLAYER 2 WINS!";
-			
 		} else {
 		document.getElementById(player2).style.backgroundColor = "blue";
 		document.getElementById(player2).style.animation = 'bounce 1s linear infinite';
